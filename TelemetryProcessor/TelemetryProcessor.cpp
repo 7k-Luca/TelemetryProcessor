@@ -1,6 +1,7 @@
 // TelemetryProcessor.cpp
 #include <iostream>
 #include <cstring>	
+using namespace std;
 #include <nlohmann/json.hpp> 
 /*
 	Steps to Add Library
@@ -17,7 +18,14 @@ using json = nlohmann::json;
 
 
 int main() {
-	
+	// Example of json data
+	json j = {
+	   {"name", "John"},
+	   {"age", 30}
+	};
+
+	// Example of printing that data
+	cout << j.dump() << endl;
 
 }
 
