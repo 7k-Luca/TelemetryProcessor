@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Lucam\Downloads\json-develop %282%29\json-develop\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Lucam\Downloads\sockpp-master\sockpp-master\include;C:\Users\Lucam\Downloads\json-develop %282%29\json-develop\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
