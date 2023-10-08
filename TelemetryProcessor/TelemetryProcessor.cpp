@@ -31,7 +31,11 @@ int main() {
 		string jsonStr = handshake.dump();
 
 		// Send the handshake packet to the server
-	}
+		conn.write(jsonStr.c_str(), jsonStr.length());
+		}
+		catch (const exception& ex) {
+			cerr << "Error: " << ex.what() << endl;
+		}
 	
 
 }
