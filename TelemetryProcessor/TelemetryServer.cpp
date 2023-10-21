@@ -13,7 +13,8 @@ int main() {
 					<< acc.last_error_str() << endl;
 
 			else {
-				thread thr(ProcessTelemetry, std::move(sock)); // Creaate a thread to handle communication with client, allows multiple clients to be handled at once
+				// ProcessTelemetry is the function we need to define that will handle data processing
+				thread thr(ProcessTelemetry, std::move(sock)); // Create a thread to handle communication with client, allows multiple clients to be handled at once
 				thr.detach();
 			
 			}
